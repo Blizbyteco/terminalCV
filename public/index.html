@@ -1,0 +1,118 @@
+<!doctype html><html xmlns=http://www.w2.org/1999/xhtml><html lang=en><head><meta name=generator content="Hugo 0.121.1"><meta charset=utf-8><title>BlizbyteCo </title><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="My terminal cv"><meta property="og:title" content="BlizbyteCo"><meta property="og:type" content="website"><meta property="og:url" content="https://blizbyteco.github.io/terminalCV/"><link rel=sitemap type=application/xml title=Sitemap href><link rel=canonical href=https://blizbyteco.github.io/terminalCV/><link rel=apple-touch-icon sizes=180x180 href=/terminalCV/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/terminalCV/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/terminalCV/favicon-16x16.png><link rel=manifest href=/terminalCV/site.webmanifest><link rel=mask-icon href=/terminalCV/safari-pinned-tab.svg color><link rel="shortcut icon" href=/terminalCV/favicon.ico><meta name=msapplication-TileColor content><script src=https://cdn.jsdelivr.net/npm/jquery></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.2/js/jquery.terminal.min.js></script><script src=https://cdn.jsdelivr.net/npm/jquery.terminal/js/less.min.js></script><script src=https://unpkg.com/jquery.terminal/js/autocomplete_menu.js></script><link href=https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/2.42.0/css/jquery.terminal.min.css rel=stylesheet><style>body{width:100%;font-size:18px}</style></head><body><script>jQuery(document).ready(function(e){var o,a,r,c,l,d,u,h,m,f,v,b,s=!1,t={help:"shows help",less:"Use less as output method",whois:"list basic details",social:"list social networks",work:"list work experience",education:"list education",skills:"list core skills",softskills:"list soft skills",languages:"list spoken languages",projects:"list projects",certifications:"list certifications",newcommand:"This Section can have a different command name",version:"Current version",exit:"exit the terminal",all:"Show all details"};function n(e){var t=Math.round(e/10),n=Array(t+1).join("&#9611;"),s=Array(11-t).join("&#9617;");return n+s}function p(e,t){return e+" ".repeat(t-e.length)}function j(){let n=Math.max(...Object.keys(t).map(e=>e.length)),e="";for(let s in t)t.hasOwnProperty(s)&&(e+=` ${p(s,n)}	${t[s]}
+`);return e}v=`
+[[b;white;]usage:]
+
+ <command> - execute the command
+ less <command> - use less to display the output
+
+
+[[b;white;]Available commands:]
+`+j(),c=[`[[b;grey;]Name:]			BlizbyteCo
+[[b;grey;]Profession:]		Digital Agency
+[[b;grey;]Location:]		Pamekasan
+[[b;grey;]Email:]			blizbyte@gmail.com
+[[b;grey;]Homepage:]		https://blizbyteco.github.io
+Kami menyediakan jasa pembuatan website, logo, UI/UX dan lain-lain
+`];function g(){var t=!1;let e={github:"https://github.com",facebook:"https://facebook.com",myspace:"https://myspace.com",hi5:"https://www.hi5.com",instagram:"https://instagram.com","Another social":"https://anothersocial.com"};socialText=[];for(let n in e)if(e.hasOwnProperty(n))if(t)socialText.push(e[n]);else{let t=Math.max(...Object.keys(e).map(e=>e.length));socialText.push(`${p(n,t)}	${e[n]}`)}return socialText}d=[`---
+[[b;grey;]Example Cert]
+Date of Completion
+Example Certifying Company
+Badge: 	https://www.link.to.badge
+`],u=[`---
+[[b;red;]Job With Red Title]
+-
+somewhere
+August 2010 - Present
+
+Some description about this red title job`,`---
+[[b;purple;]Job with purple title]
+-
+somewhere elese
+July 2000  - July 2010
+
+Some description about this purple job`,`---
+[[b;grey;]Job with default color title]
+-
+anywhere
+July 2008 - 2010
+
+Description about this default color job`],h=[`---
+[[b;red;]Red Color training]
+June 2019 - July 2019
+Descrption about red color trianing
+`,`---
+[[b;grey;]Default color training]
+Sept 2004 - Jun 2008
+`],m=[`---
+[[b;red;]Project Red]
+since 2019
+https://example.com
+Describing red stuff
+`,`---
+[[b;blue;]Project Blue]
+since 2016
+https://example.com/blue
+`,`---
+[[b;grey;]Project Default]
+Since 2017
+https://example.com/default
+`],o=[`[[b;grey;]Skill 1:]
+`+n(90)+`90%
+`,`[[b;grey;]Skill 2:]
+`+n(30)+`30%
+`,`[[b;blue;]Skill 3:]
+`+n(50)+`50%
+Skill names can have colors too
+`],a=[`[[b;red;]SoftSkill 1:]
+`+n(80)+`80%
+`,`[[b;grey;]SoftSkill 2:]
+`+n(90)+`90%
+Description
+`],f=[`[[b;Blue;]English:]
+`+n(50)+`50%
+`,`[[b;grey;]Gibberish:]
+`+n(100)+`100%
+pasghettipigglywiggly
+`],l=[`[[b;teal;]This Section can have a different command name]
+[[;orange;]Here the title and the content can have different colors
+The content can be multi
+
+line
+
+And spaces       will be respected as well
+This section will have the default command: misc
+but you can name it something else with the property
+commandName: <String>
+Give it a shot and try and uncomment the line 
+commandName: newcommand
+now instead of misc you can execute the newcommand for this section
+Auto completion will know it too! :D 
+]
+`],r=`        _______            
+       |       |           
+       |       |           
+       |_______|_______    
+               |       |   
+               |       |   
+ ______________|_______|   
+|      |       |       |   
+|      |       |       |   
+|______|_______|_______|   
+[[;red;]May the source be with you]
+[[;grey;]https://github.com/coolapso/hugo-theme-terminalcv
+`,b=[c,g(),u,h,o,a,f,m,d,l,r],e("body").terminal(function(e,n){var y=!1;function p(e){if(y)n.less(e);else for(i=0;i<e.length;i+=1)n.echo(e[i])}function j(e,t){var s,o=Math.round(t*e/100),i="",n="";for(s=o;s--;)n+="=";n.length>0&&(n=n.replace(/=$/,">"));for(s=t-o;s--;)i+=" ";return"["+n+i+"] "+e+"%"}function _(){var e=0,t=30;prompt=n.get_prompt(),string=j(0,t),n.set_prompt(j),s=!0,function o(){string=j(e++,t),n.set_prompt(string),e<100?timer=setTimeout(o,10):(n.echo(j(e,t)+" [[b;green;]OK]").set_prompt(prompt),s=!1)}()}switch(t=e.split(/[ ]+/),t[0]=="less"&&(y=!0,t.shift()),t[0]){case"whois":p(c);break;case"social":p(g());break;case"work":p(u);break;case"education":p(h);break;case"skills":y=!0,p(o);break;case"softskills":p(a);break;case"languages":p(f);break;case"projects":p(m);break;case"certifications":n.echo(d);break;case"newcommand":p(l);break;case"help":case"?":n.echo(v);break;case"all":p(b.flat(1));break;case":(){:|:&};:":n.echo("nice try");break;case"source":n.echo(r);break;case"exit":n.echo("terminating ... "),_(),setTimeout(function(){window.location="about:blank"},2e3);break;case"version":n.echo("2.0.0");break;case"":break;default:n.echo(`
+unknown command: `+e+`
+please type 'help' or '?' for a list of available commands
+`)}},{prompt:"[[;red;][][[;pink;]user@BlizByteCo][[;red;]\\]][[;grey;]-][[;Blue;][][[;red;]~/Blizbyte][[;Blue;]\\]][[;orange;]: ]",greetings:`[[b;white;]____   _ _     _           _                 
+|  _ \\| (_)   | |         | |                
+| |_) | |_ ___| |__  _   _| |_ ___  ___ ___  
+|  _ <| | |_  / '_ \\| | | | __/ _ \\/ __/ _ \\ 
+| |_) | | |/ /| |_) | |_| | ||  __/ (_| (_) |
+|____/|_|_/___|_.__/ \\__, |\\__\\___|\\___\\___/ 
+                      __/ |                  
+                    |___/                    
+
+Welcome to our online resume
+
+Type 'help' for a list of available commands
+]`,keydown:function(e,t){if(s)return e.which==68&&e.ctrlKey&&(clearTimeout(timer),s=!1,t.echo(string+" [[b;red;]FAIL]").set_prompt(prompt)),!1},autocompleteMenu:!0,completion:Object.keys(t)})})</script></body></html>
