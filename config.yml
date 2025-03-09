@@ -1,5 +1,5 @@
 ## Example Config file
-baseURL: "https://example.com"
+baseURL: "https://blizbyteco.github.io/terminalCV/"
 theme: "terminalcv"
 title: "BlizbyteCo"
 
